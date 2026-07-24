@@ -1,0 +1,36 @@
+name: better_social_share
+description: >-
+  Share text, images, and videos directly to WhatsApp, Instagram (feed, story,
+  reels, direct), Facebook, Messenger, Telegram, TikTok, X, and SMS — with
+  typed results instead of silent failures. No Facebook SDK required.
+version: 0.1.0
+repository: https://github.com/keesplugandpay/better_social_share
+issue_tracker: https://github.com/keesplugandpay/better_social_share/issues
+topics:
+  - share
+  - social
+  - whatsapp
+  - instagram
+  - tiktok
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.bettersocialshare.better_social_share
+        pluginClass: BetterSocialSharePlugin
+      ios:
+        pluginClass: BetterSocialSharePlugin

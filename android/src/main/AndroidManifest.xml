@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shipped by the plugin so host apps need no manifest changes:
+         package visibility for getInstalledApps() and explicit share intents. -->
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="org.telegram.messenger" />
+        <package android:name="com.instagram.android" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.facebook.orca" />
+        <package android:name="com.zhiliaoapp.musically" />
+        <package android:name="com.ss.android.ugc.trill" />
+        <package android:name="com.twitter.android" />
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="smsto" />
+        </intent>
+    </queries>
+
+    <application>
+        <!-- Plugin-owned FileProvider with a unique authority, so host apps
+             don't have to configure one and can still have their own. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.better_social_share.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/better_social_share_file_paths" />
+        </provider>
+    </application>
+</manifest>
