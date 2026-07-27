@@ -2,7 +2,7 @@ group = "com.bettersocialshare.better_social_share"
 version = "0.1.0"
 
 buildscript {
-    ext.kotlin_version = "2.1.0"
+    ext.kotlin_version = "2.2.20"
     repositories {
         google()
         mavenCentral()
@@ -21,7 +21,6 @@ rootProject.allprojects {
 }
 
 apply plugin: "com.android.library"
-apply plugin: "kotlin-android"
 
 android {
     namespace = "com.bettersocialshare.better_social_share"
@@ -32,16 +31,18 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
     }
 
     defaultConfig {
         minSdk = 21
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
 
