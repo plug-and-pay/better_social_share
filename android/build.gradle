@@ -21,6 +21,7 @@ rootProject.allprojects {
 }
 
 apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
 
 android {
     namespace = "com.bettersocialshare.better_social_share"
