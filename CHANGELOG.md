@@ -1,3 +1,9 @@
+## 0.1.1
+
+* iOS: add Swift Package Manager support. The plugin now ships a
+  `Package.swift` alongside the podspec, so it works with Flutter's SPM
+  integration as well as CocoaPods.
+
 ## 0.1.0
 
 Initial release — a modern replacement for `appinio_social_share`.

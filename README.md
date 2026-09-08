@@ -60,6 +60,9 @@ dependencies:
 
 ### iOS
 
+The plugin supports both **Swift Package Manager** and **CocoaPods**. Flutter
+picks whichever your project uses; nothing extra is required.
+
 Add the URL schemes you want to detect/share to in `ios/Runner/Info.plist`:
 
 ```xml

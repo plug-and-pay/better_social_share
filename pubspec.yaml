@@ -3,7 +3,7 @@ description: >-
   Share text, images, and videos directly to WhatsApp, Instagram (feed, story,
   reels, direct), Facebook, Messenger, Telegram, TikTok, X, and SMS — with
   typed results instead of silent failures. No Facebook SDK required.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/keesplugandpay/better_social_share
 issue_tracker: https://github.com/keesplugandpay/better_social_share/issues
 topics:
